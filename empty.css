@@ -1,0 +1,16 @@
+#guarantee {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3rem;
+    background-color: #a7cece;
+    padding: 25px;
+    margin: 30px;
+    line-height: 1.9em;
+    font-style: italic;
+    color: #444444;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(img/star\ 🌟.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
