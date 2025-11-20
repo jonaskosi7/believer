@@ -19,10 +19,23 @@
     --LIGHT-COLOR: whitesmoke;
     --DARK-COLOR: #000;
 
+
+    /* SQUARE */
+    --SQUARE-BGCOLOR: papayawhip;
+    --SQUARE-SIZE: max(150px, 20vw);
+
     /* GENERAL */
     --PADDING: 0.5rem;
     --SHADOWS:  0 6px 5px -5px var(--DARK-COLOR);
     --BORDERS:  2px solid var(var(--DARK-COLOR));
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --BGCOLOR: #000;
+        --ALT-BGCOLOR: rgb(217, 217, 217);
+        --SQUARE-BGCOLOR: rgb(202, 174, 202);
+    }
 }
 
 img {
@@ -95,7 +108,7 @@ nav a:active {
 main {
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 1.5rem;
     padding: 1rem;
@@ -105,8 +118,28 @@ footer {
     bottom: 0;
 }
 
+
+/* FEATURES */
+
+.square--highlight {
+    --SQUARE-BGCOLOR: cornflowerblue;
+}
+
+.square {
+    background-color: var(--SQUARE-BGCOLOR);
+    width: var(--SQUARE-SIZE);
+    height: var(--SQUARE-SIZE);
+    border: var(--BORDERS);
+    border-radius: 15px;
+    display: grid;
+    place-content: center;
+    font-size: var(--FS-XL);
+    box-shadow: var(--SHADOWS);
+}
+
+
 /* || PROFILE CARD */
- .card {
+ /* .card {
     scroll-margin-top: 8rem;
     width: min(100%, 350px);
     background-color: #cbd5e1;
@@ -175,15 +208,10 @@ footer {
     position: absolute;
     top: -0.25em;
     right: -0.5em;
-}
-
-#blog {
-    background-color: papayawhip;
-    width: 6rem;
-}
+} */
 
 /* || SMALL */
-@media screen and (min-width: 576px) {
+/* @media screen and (min-width: 576px) {
   main {
     justify-content: center;
     flex-flow: row wrap;
@@ -195,11 +223,11 @@ footer {
   .card:last-child {
     order: -1;
   }
-}
+} */
 
 
 /* || MEDIUM */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
    nav {
     display: none;
    }
@@ -209,31 +237,31 @@ footer {
    }
    .card figure {
     flex-flow: column-reverse;
-   }
+   } */
    /* .card figcaption {
     margin: 0.1em 0;
    } */
-   .card p {
+   /* .card p {
     margin-top: 1rem;
    }
-}
+} */
 /* || LARGE */
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
    .card {
     width: min(100%, 400px);
    }
    .card:nth-child(2) {
     order: -1;
    }
-}
+} */
 /* || XL */
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     .card {
         width: min(calc(33% - 1rem), 500px);
     }
-}
+} */
 /* || MOBILE DEVICE LANDSCAPE */
-@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+/* @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
    h1 {
     font-size: 1.5rem;
    }
@@ -257,4 +285,4 @@ footer {
    }
 
    
-}
+} */

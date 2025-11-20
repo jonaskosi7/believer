@@ -67,14 +67,14 @@ a:link {
     border-bottom: thin dotted #675c47;
 }
 
-/* #allcontent {
-    width: 800px;
+#allcontent {
+    width: 900px;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #675c47;
     margin-left: auto;
     margin-right: auto;
-} */
+} 
 
 #tableContainer {
     display: table;
@@ -94,7 +94,7 @@ a:link {
 #drinks {
     display: table-cell;
     background-color: #efe5d0;
-    width: 20%;
+    width: 2%;
     padding: 15px;
     vertical-align: top;
 }
@@ -184,7 +184,45 @@ p {
  */
 
 
+/* || SMALL */
+@media screen and (min-width: 576px) {
+    body {
+        background-color: green;
+        background-image: radial-gradient(whitesmoke, green);
+    }
+}
+/* || MEDIUM */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke, gold);
+    }
+}
+/* || LARGE */
+@media screen and (min-width: 992px) {
+    body {
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke, firebrick);
+    }
+}
+/* || XL */
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke, rebeccapurple);
+    }
+}
+/* || MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+    body {
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke, dodgerblue);
+    }
 
+    h1, h2 { 
+        font-size: 1.5rem;
+    }
+}
 
 
 
